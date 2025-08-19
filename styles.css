@@ -1,0 +1,91 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Base paragraph styling */
+p {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Special paragraph classes */
+p.intro {
+    background-color: #e8f4fd;
+    border-left-color: #2980b9;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+p.highlight {
+    background-color: #fff3cd;
+    border-left-color: #f39c12;
+    border: 2px solid #ffeaa7;
+    font-weight: 500;
+    color: #856404;
+}
+
+p.quote {
+    background-color: #f8f9fa;
+    border-left-color: #e74c3c;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
